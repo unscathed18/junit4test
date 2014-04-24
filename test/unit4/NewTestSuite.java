@@ -6,7 +6,6 @@
 
 package unit4;
 
-import junit.framework.TestSuite;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -16,14 +15,15 @@ import org.junit.runners.Suite;
 
 /**
  *
- * @author unscathed18
+ * @author teo1tb8_1
  */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({unit4.WarehouseTest.class, unit4.PackageTest.class, unit4.ContainerTest.class})
-public class unit4Suite {
+@Suite.SuiteClasses({unit4.ContainerTest.class, unit4.WarehouseTest.class, unit4.PackageTest.class})
+public class NewTestSuite {
 
     @BeforeClass
     public static void setUpClass() throws Exception {
+        
     }
 
     @AfterClass
@@ -32,9 +32,6 @@ public class unit4Suite {
 
     @Before
     public void setUp() throws Exception {
-        TestSuite suite = new TestSuite("ContainerSuite");
-        //suite.addTest(container)
-        //https://netbeans.org/kb/docs/java/junit-intro.html#Exercise_40
     }
 
     @After
